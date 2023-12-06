@@ -1,10 +1,12 @@
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   padding: 6rem;
   min-height: 100vh;
+  background-color: rgb(179, 192 200);
+  gap: 1.5rem;
 }
 
 .description {
