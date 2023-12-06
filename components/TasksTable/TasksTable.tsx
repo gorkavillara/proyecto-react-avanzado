@@ -45,6 +45,7 @@ const TasksTable = () => {
                     <td>
                         <select
                             value={selectedUserId}
+                            id="user-select"
                             onChange={(e) =>
                                 setSelectedUserId(Number(e.target.value))
                             }
@@ -62,7 +63,7 @@ const TasksTable = () => {
                         </button>
                     </td>
                 </tr>
-                {tasks.reverse().map((task) => {
+                {tasks.map((task) => {
                     const user = users.find((user) =>
                         user.task_ids.includes(task.id)
                     )
