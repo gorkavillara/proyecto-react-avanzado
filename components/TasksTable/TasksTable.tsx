@@ -23,7 +23,7 @@ const TasksTable = () => {
         setSelectedUserId(1)
     }
     return (
-        <table className={styles.TasksTable}>
+        <table id="tasks-table" className={styles.TasksTable}>
             <thead>
                 <tr>
                     <th>Tarea</th>
