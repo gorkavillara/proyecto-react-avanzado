@@ -6,7 +6,7 @@ describe("Pantalla de tareas", () => {
         cy.visit("https://proyecto-react-avanzado-nu.vercel.app/")
     })
 
-    it("displays eleven todo items by default", () => {
+    it("Muestra once elementos por defecto", () => {
         cy.get("#tasks-table tbody tr").should("have.length", 11)
 
         cy.get("#tasks-table tbody tr")
@@ -21,7 +21,7 @@ describe("Pantalla de tareas", () => {
 
         cy.get("#tasks-table tbody tr td input").type(nuevaTarea)
 
-        cy.get('#user-select').select('anaperez')
+        cy.get("#user-select").select("anaperez")
 
         cy.get("#create-task-button").click()
         cy.get("#tasks-table tbody tr").should("have.length", 12)
