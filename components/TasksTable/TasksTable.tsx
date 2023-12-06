@@ -64,7 +64,7 @@ const TasksTable = () => {
                         </button>
                     </td>
                 </tr>
-                {tasks.toReversed().map((task) => {
+                {tasks.reverse().map((task) => {
                     const user = users.find((user) =>
                         user.task_ids.includes(task.id)
                     )
