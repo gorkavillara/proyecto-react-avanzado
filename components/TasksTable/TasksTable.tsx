@@ -57,9 +57,7 @@ const TasksTable = () => {
                         </select>
                     </td>
                     <td>
-                        <button
-                            onClick={createNewTask}
-                        >
+                        <button id="create-task-button" onClick={createNewTask}>
                             <IoCheckmarkCircleOutline />
                         </button>
                     </td>

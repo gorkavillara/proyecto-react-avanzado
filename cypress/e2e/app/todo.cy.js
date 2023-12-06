@@ -10,13 +10,14 @@ describe("example to-do app", () => {
 
         cy.get("#tasks-table tbody tr")
             .last()
-            .should("have.text", "Diseñar la página de configuración")
+            .should("have.text", "Crear la página de inicio")
     })
 
     it("can add new todo items", () => {
-        const newItem = "Feed the cat"
+        const nuevaTarea = "Crear los tests de Cypress"
 
-        cy.get("#tasks-table tbody tr td input").type(`${newItem}{enter}`)
+        cy.get("#tasks-table tbody tr td input").type(nuevaTarea)
+        cy.get("#create-task-button").click()
         cy.get("#tasks-table tbody tr").should("have.length", 12)
     })
 })
