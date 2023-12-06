@@ -2,8 +2,8 @@
 
 describe("Pantalla de tareas", () => {
     beforeEach(() => {
-        cy.visit("http://localhost:3000")
-        // cy.visit("https://proyecto-react-avanzado-nu.vercel.app/")
+        // cy.visit("http://localhost:3000")
+        cy.visit("https://proyecto-react-avanzado-nu.vercel.app/")
     })
 
     it("displays eleven todo items by default", () => {
