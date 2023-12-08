@@ -8,7 +8,7 @@ export const useTasks = () => {
 
     const addNewTask = (newTask: Task) => {
         setTasks([...tasks, newTask])
-        toast("Tarea añadida con éxito")
+        toast.success("Tarea añadida con éxito")
     }
 
     return { tasks, setTasks, addNewTask }

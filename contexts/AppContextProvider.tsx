@@ -1,5 +1,5 @@
 import { initialTasks, initialUsers } from "@/assets/data"
-import { Task, User } from "@/models"
+import type { Task, User } from "@/models"
 import { AppContextType } from "@/models/contexts"
 import React, { createContext, useState } from "react"
 
